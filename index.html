@@ -19,7 +19,7 @@ var push = PushNotification.init({ "android": {"senderID": "244192342021"},
 "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 */
 push.on('registration', function(data) {
-  document.write(data);
+  document.write(JSON.stringify(data));
 console.log(data.registrationId);
 $("#gcm_id").html(data.registrationId);
 document.write(data.registrationId);
