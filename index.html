@@ -1,0 +1,27 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+
+<name>CNHS</name>
+
+<description>APP for CNHS.</description>
+
+<author email="support@phonegap.com" href="http://phonegap.com"> PhoneGap Team</author>
+
+<content src="demo.html"/>
+
+<gap:plugin name="pushbots-cordova-plugin" source="npm" />
+<access origin="*" />
+
+<plugin name="phonegap-plugin-push" spec="1.6.0">
+    <param name="SENDER_ID" value="244192342021" />
+</plugin>
+
+<platform name="android">
+<!-- a preference specific to android only here -->
+</platform>
+
+<feature name="Device">
+<param name="android-package"
+value="org.apache.cordova.device.Device"
+/>
+</feature>
+</widget>
