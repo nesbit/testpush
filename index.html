@@ -10,6 +10,7 @@
 <script type="text/javascript">
 document.addEventListener("deviceready",onDeviceReady,false);
 function onDeviceReady(){
+document.write("Test!!!");
 console.log("Device Ready")
 var push = PushNotification.init({ "android": {"senderID": "244192342021"}} );
 /*
@@ -19,6 +20,7 @@ var push = PushNotification.init({ "android": {"senderID": "244192342021"},
 push.on('registration', function(data) {
 console.log(data.registrationId);
 $("#gcm_id").html(data.registrationId);
+document.write("Works!!!");
 });
 
 push.on('notification', function(data) {
