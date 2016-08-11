@@ -28,6 +28,7 @@ document.write(data.registrationId);
 push.on('notification', function(data) {
 console.log(data.message);
 alert(data.title+" Message: " +data.message);
+document.write("Alert: "+ JSON.stringify(data));
 // data.title,
 // data.count,
 // data.sound,
