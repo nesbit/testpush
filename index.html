@@ -13,11 +13,13 @@ function onDeviceReady(){
 //document.write("Test!!!");
 console.log("Device Ready");
 var push = PushNotification.init({ "android": {"senderID": "244192342021"}} );
+var dada;
 /*
 var push = PushNotification.init({ "android": {"senderID": "244192342021"},
 "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 */
 push.on('registration', function(data) {
+  document.write(data);
 console.log(data.registrationId);
 $("#gcm_id").html(data.registrationId);
 document.write(data.registrationId);
