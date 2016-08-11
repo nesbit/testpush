@@ -1,8 +1,8 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.testpush" version="1.0.0">
 
-<name>CNHS</name>
+<name>testpush</name>
 
-<description>APP for CNHS.</description>
+<description>testpush</description>
 
 <author email="support@phonegap.com" href="http://phonegap.com"> PhoneGap Team</author>
 
