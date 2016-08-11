@@ -8,7 +8,6 @@
 
 <content src="index.html"/>
 
-<gap:plugin name="pushbots-cordova-plugin" source="npm" />
 <access origin="*" />
 <!--
 <plugin name="phonegap-plugin-push" spec="1.6.0">
