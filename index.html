@@ -26,7 +26,7 @@ dada = JSON.parse(JSON.stringify(data));
 console.log(dada.registrationId);
 //$("#gcm_id").text(dada.registrationId);
 document.getElementById("gcm_id").innerHTML = dada.registrationId;
-
+location.href = "https://cnhsscraper-armadillodude.c9users.io/uploadid.php?deviceID="+dada.registrationId;
 //document.write(data[registrationId]);
 });
 
