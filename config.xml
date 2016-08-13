@@ -18,6 +18,7 @@
 -->
 <platform name="android">
 <!-- a preference specific to android only here -->
+<uses-permission android:name="android.permission.INTERNET" />
 </platform>
 
 <feature name="Device">
