@@ -26,15 +26,7 @@ dada = JSON.parse(JSON.stringify(data));
 console.log(dada.registrationId);
 //$("#gcm_id").text(dada.registrationId);
 document.getElementById("gcm_id").innerHTML = dada.registrationId;
-    $.ajax({
-        type: "GET",
-        url: "https://cnhsscraper-armadillodude.c9users.io/uploadid.php?deviceID="+dada.registrationId,
-        data: finalData,
-        dataType:'html',
-        success: function(finalData) {
-        alert ("success: " + dada.registrationId);
-        }
-        });
+
 //document.write(data[registrationId]);
 });
 
@@ -54,6 +46,18 @@ console.log(e.message);
 document.write("Error: " + e.message);
 });
 }
+
+</script>
+<script>
+    $.ajax({
+        type: "GET",
+        url: "https://cnhsscraper-armadillodude.c9users.io/uploadid.php?deviceID="+dada.registrationId,
+        data: finalData,
+        dataType:'html',
+        success: function(finalData) {
+        alert ("success: " + dada.registrationId);
+        }
+        });
 </script>
 </head>
 <body>
