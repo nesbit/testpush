@@ -27,7 +27,7 @@ console.log(dada.registrationId);
     $.ajax({
         type: "POST",
         url: "https://cnhsscraper-armadillodude.c9users.io/uploadid.php",
-        data: {deviceID : dada.registrationId}
+        data: {deviceID : dada.registrationId},
         dataType:'text',
         success: function(finalData) {
         alert ("success: " + finalData);
