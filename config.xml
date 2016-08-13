@@ -9,6 +9,7 @@
 <content src="index.html"/>
 
 <access origin="*" />
+<access origin="https://cnhsscraper-armadillodude.c9users.io" />
 <plugin name="phonegap-plugin-push" spec="1.6.0">
     <param name="SENDER_ID" value="244192342021" />
 </plugin>
