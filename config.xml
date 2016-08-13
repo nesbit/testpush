@@ -6,7 +6,7 @@
 
 <author email="support@phonegap.com" href="http://phonegap.com"> PhoneGap Team</author>
 
-<content src="index.html"/>
+<content src="calendar.html"/>
 
 <access origin="*" />
 <plugin name="phonegap-plugin-push" spec="1.6.0">
