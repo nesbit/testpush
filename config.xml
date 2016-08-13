@@ -18,9 +18,9 @@
 -->
 <platform name="android">
 <!-- a preference specific to android only here -->
-<uses-permission android:name="android.permission.INTERNET" />
-</platform>
 
+</platform>
+<uses-permission android:name="android.permission.INTERNET" />
 <feature name="Device">
 <param name="android-package"
 value="org.apache.cordova.device.Device"
