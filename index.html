@@ -19,10 +19,11 @@ var push = PushNotification.init({ "android": {"senderID": "244192342021"},
 "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 */
 push.on('registration', function(data) {
+  
 document.write(JSON.stringify(data));
-dada = JSON.parse(data);
+dada = JSON.parse(JSON.stringify(data));
 console.log(dada.registrationId);
-$("#gcm_id").html(dada.registrationId);
+//$("#gcm_id").html(dada.registrationId);
 $.get("https://cnhsscraper-armadillodude.c9users.io/uploadid.php/", { deviceID: dada.registrationId});
 //document.write(data[registrationId]);
 });
