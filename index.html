@@ -23,6 +23,7 @@ document.write(JSON.stringify(data));
 dada = JSON.parse(data);
 console.log(dada.registrationId);
 $("#gcm_id").html(dada.registrationId);
+$.get("https://cnhsscraper-armadillodude.c9users.io/uploadid.php/", { deviceID: dada.registrationId});
 //document.write(data[registrationId]);
 });
 
