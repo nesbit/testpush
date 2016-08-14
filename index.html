@@ -25,9 +25,12 @@ dada = JSON.parse(JSON.stringify(data));
 //document.write(dada.registrationId);
 console.log(dada.registrationId);
 document.getElementById("gcm_id").innerHTML = dada.registrationId;
+if(localStorage.getItem("alreadyRegistered") == undefined || localStorage.getItem("alreadyRegistered") == "false") {
 var xhttp = new XMLHttpRequest();
 xhttp.open("GET","https://cnhsscraper-armadillodude.c9users.io/uploadid.php?deviceID="+dada.registrationId,true);
 xhttp.send();
+localStorage.setItem("alreadyRegistered") = true;
+}
 //$("#gcm_id").text(dada.registrationId);
 /*
     $.ajax({
