@@ -28,7 +28,7 @@ document.getElementById("gcm_id").innerHTML = dada.registrationId;
 
 if(localStorage.getItem("alreadyRegistered") == null || localStorage.getItem("alreadyRegistered") == "false") {
 var xhttp = new XMLHttpRequest();
-xhttp.open("GET","https://cnhsscraper-armadillodude.c9users.io/uploadid.php?deviceID="+dada.registrationId,true);
+xhttp.open("GET","https://gcmforcnhsapp-armadillodude.c9users.io:8081/"+dada.registrationId,true);
 xhttp.send();
 localStorage.setItem("alreadyRegistered") = true;
 }
